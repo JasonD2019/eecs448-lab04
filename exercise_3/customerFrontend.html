@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_3/style.css"
+            rel="stylesheet"
+            type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Store</title>
+</head>
+<body>
+        <div style="width:100%;overflow:hidden;height:60px">
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/main.html';">Main Page</button>
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_1/Multiplication_Table.php';">Exercise 1</button>
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_2/Quiz.html';">Exercise 2</button>
+                <button class = "Presenting" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_3/customerFrontend.html';">Exercise 3</button>
+        </div>
+    <center>
+    <p class = "title">Start your shopping!</p>
+    <form action="customerBackend.php" method="post" onsubmit="return Check()">
+        <h1>First Step: select your items.</h1>
+        <div>
+            <p class = "list">1. iPhone XR &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$799&emsp;
+                <input type="button" class="minus" value="-"/>
+                <input type="number" name = "num_iphone" id= "num_iphone" class="num" value="0"/>
+                <input type="button" class="plus" value="+"/>
+            </p>
+        </div>
+
+        <div>
+            <p class = "list">2. iPad &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;$429&emsp;
+                <input type="button" class="minus" value="-"/>
+                <input type="number" name = "num_ipad" id="num_ipad"class="num" value="0"/>
+                <input type="button" class="plus" value="+"/>
+            </p>
+        </div>
+
+        <div>
+            <p class = "list">3. AirPods &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$159&emsp;
+                <input type="button" class="minus" value="-"/>
+                <input type="number" name = "num_airpod" id= "num_airpod"class="num" value="0"/>
+                <input type="button" class="plus" value="+"/>
+            </p>
+        </div><br>
+
+        <h1>Second Step: login your account.</h1>
+        <p class = "login">Your Username:
+        <input type="email" id= "m_username" name="m_username" value="" placeholder="Your username.."><br>
+        Your password:
+        <input type="text" id="m_password" name="m_password" value="" placeholder="Your password.."></p><br>
+
+        <h1>Last Step: Choose your shipping:</h1>
+        <label><input type="radio" name="Shipping" id="Shipping" value="1"checked="checked"/>Free 7 day<br></label>
+        <label><input type="radio" name="Shipping" id="Shipping" value="2"/>$50.00 over night<br></label>
+        <label><input type="radio" name="Shipping" id="Shipping" value="3"/>$5.00 three day<br></label><br>
+        <button class = "normal" type="submit" value="Submit">Submit</button>
+        <button class = "normal" type="reset" value="Reset">Reset</button></p>
+    </form>
+    <script src="https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_3/formChecker.js"></script>
+</body>
+</html>
