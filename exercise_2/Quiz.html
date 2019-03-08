@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+</head>
+<style>
+.normal{
+    font-family: Comic Sans MS;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14x;
+    margin: 6px 2px;
+    cursor: pointer;
+}
+p{
+    color: black;
+    font-family: Comic Sans MS;
+    font-style: oblique;
+    font-size: 20px 
+}
+.GoTo{
+    border-radius: 12px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Presenting{
+    border-radius: 12px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<body>
+        <div style="width:100%;overflow:hidden;height:60px">
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/main.html';">Main Page</button>
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_1/Multiplication_Table.php';">Exercise 1</button>
+                <button class = "Presenting" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_2/Quiz.html';">Exercise 2</button>
+                <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab04/exercise_3/customerFrontend.html';">Exercise 3</button>
+        </div> 
+        <form action="Quiz.php" method="post"><p>
+        Question 1: What is the sum of 2+2?<br>
+        <label><input type="radio" name="Q1" id="Q1_C1" value="1"/>a). 2,823,564<br></label>
+        <label><input type="radio" name="Q1" id="Q1_C2" value="2"/>b). 5,312,809<br></label>
+        <label><input type="radio" name="Q1" id="Q1_C3" value="3"/>c). 4<br></label>
+        <label><input type="radio" name="Q1" id="Q1_C4" value="4"/>d). 5<br></label>
+        <br>
+        Question 2: What is the first letter of the alphabet?<br>
+        <label><input type="radio" name="Q2" id="Q2_C1" value="1"/>a). A<br></label>
+        <label><input type="radio" name="Q2" id="Q2_C2" value="2"/>b). M<br></label>
+        <label><input type="radio" name="Q2" id="Q2_C3" value="3"/>c). Z<br></label>
+        <label><input type="radio" name="Q2" id="Q2_C4" value="4"/>d). F<br></label>
+        <br>    
+        Question 3: Are you alive?<br>
+        <label><input type="radio" name="Q3" id="Q3_C1" value="1"/>a). Yes<br></label>
+        <label><input type="radio" name="Q3" id="Q3_C2" value="2"/>b). No<br></label> 
+        <label><input type="radio" name="Q3" id="Q3_C3" value="3"/>c). I don't know<br></label>
+        <label><input type="radio" name="Q3" id="Q3_C4" value="4"/>d). I don't want to tell you<br></label>
+        <br>
+        Question 4: What are you doing right now?<br>
+        <label><input type="radio" name="Q4" id="Q4_C1" value="1"/>a). Eating<br></label>
+        <label><input type="radio" name="Q4" id="Q4_C2" value="2"/>b). Sleeping<br></label>
+        <label><input type="radio" name="Q4" id="Q4_C3" value="3"/>c). Taking a boring quiz<br></label>
+        <label><input type="radio" name="Q4" id="Q4_C4" value="4"/>d). In class<br></label>
+        <br>
+        Question 5: Is this quiz easy?<br>
+        <label><input type="radio" name="Q5" id="Q5_C1" value="1"/>a). Yes<br></label>
+        <label><input type="radio" name="Q5" id="Q5_C2" value="2"/>b). I don't know<br></label>
+        <label><input type="radio" name="Q5" id="Q5_C3" value="3"/>c). No<br></label>
+        <label><input type="radio" name="Q5" id="Q5_C4" value="4"/>d). Really Hard<br></label></p>
+        <input type="submit">
+        </form>  
+</body>
+</html>
